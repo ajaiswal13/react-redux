@@ -6,7 +6,7 @@ import { selectedProduct } from "../redux/actions/productActions";
 
 const ProductDetail = () => {
 
-    let product = useSelector((state) => state.product)
+    let product = useSelector((state) => state.product) // useSelector allows you to extract data from the Redux store state.Each call to useSelector() creates an individual subscription to the Redux store
     const { image, title, price, category, description } = product;
     const {productId} = useParams();
     const dispatch = useDispatch();

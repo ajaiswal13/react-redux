@@ -6,7 +6,7 @@ import { setProducts } from "../redux/actions/productActions";
 
 const ProductList = () => {
 
-    const dispatch = useDispatch();
+    const dispatch = useDispatch();// useDispatch returns a reference to the dispatch function from the Redux store. You may use it to dispatch actions as needed.
     
     const listOfProducts = async() => {
           const response = await axios
